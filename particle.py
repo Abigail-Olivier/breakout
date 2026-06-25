@@ -1,6 +1,7 @@
 import pygame
 import random
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 class Particle(pygame.sprite.Sprite):
     def __init__(self, color, x, y):
         super().__init__()

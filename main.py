@@ -8,7 +8,7 @@ from powerup import PowerUp
 
 pygame.init()
 
-# Constants
+# ----------------------------- CONSTANTS ----------------------------- #
 RED = (251, 66, 1)
 ORANGE = (239, 135, 14)
 YELLOW = (254, 206, 0)
@@ -21,6 +21,7 @@ BLACK = (0, 0, 0)
 score = 0
 lives = 3
 
+# ---------------------------- GAME INITIALIZATION ---------------------------- #
 # Load high score from file or default to 0
 try:
     with open("highscore.txt", "r") as file:
@@ -78,7 +79,7 @@ all_sprites_list.add(ball)
 carryOn = True
 clock = pygame.time.Clock()
 
-# Main Loop
+# -------------------------- MAIN EXECUTION --------------------------- #
 while carryOn:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

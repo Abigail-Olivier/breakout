@@ -1,7 +1,9 @@
 import pygame
 
+# ----------------------------- CONSTANTS ----------------------------- #
 BLACK = (0, 0, 0)
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 class Paddle(pygame.sprite.Sprite):
     def __init__(self, color, width, height):
         super().__init__()
@@ -21,7 +23,7 @@ class Paddle(pygame.sprite.Sprite):
 
     def moveRight(self, pixels):
         self.rect.x += pixels
-        # Dynamically evaluate width limits so wide paddle stops accurately
+        # Evaluate width limits so wide paddle stops accurately
         if self.rect.x > 800 - self.rect.width:
             self.rect.x = 800 - self.rect.width
 

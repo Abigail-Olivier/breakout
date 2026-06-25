@@ -1,8 +1,10 @@
 import pygame
 from random import randint
 
+# ----------------------------- CONSTANTS ----------------------------- #
 BLACK = (0, 0, 0)
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 class Ball(pygame.sprite.Sprite):
     def __init__(self, color, width, height):
         super().__init__()

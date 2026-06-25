@@ -1,7 +1,9 @@
 import pygame
 
+# ----------------------------- CONSTANTS ----------------------------- #
 BLACK = (0, 0, 0)
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 class Brick(pygame.sprite.Sprite):
     def __init__(self, color, width, height):
         super().__init__()
